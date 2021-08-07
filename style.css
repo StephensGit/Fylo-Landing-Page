@@ -19,6 +19,7 @@ body {
     font-family: var(--body-font);
     color: var(--dark-blue);
     font-size: var(--base-font-size);
+    margin: 0;
 }
 
 img {
@@ -28,7 +29,7 @@ img {
 .container {
     width: 1440px;
     max-width: 100%;
-    padding: 20px 0px;
+    padding: 30px 0px;
     margin: 0 auto;
 }
 
@@ -47,10 +48,6 @@ img {
 
 .flex > div:first-child {
     padding-right: 30px;
-}
-
-.flex > div:last-child {
-    /* margin-left: 10px; */
 }
 
 /* Navigation */ 
@@ -76,7 +73,7 @@ nav ul a {
     color: var(--dark-blue);
 }
 
-h1, h2 {
+h1, h2, h4 {
     /* letter-spacing: 1px; */
     font-family: var(--heading-font);
     font-weight: 700;
@@ -90,17 +87,22 @@ form {
 }
 
 input {
-    /* width: 320px; */
+    font-family: var(--body-font);
+    font-size: 16px;
+    color: var(--secondary-backgrouund);
     flex: 0.6;
     border: 1px solid var(--dark-blue);
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 15px;
 }
 
 button {
+    font-family: var(--body-font);
+    font-size: 14px;
     flex: 0.3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     border: 1px solid var(--btn-blue);
-    border-radius: 2px;
+    border-radius: 3px;
     background: var(--btn-blue);
     color: #ffffff;
     padding: 15px;
@@ -118,3 +120,95 @@ button {
 .flex > .main-left > p {
     width: 80%;
 } 
+
+.main-section {
+    background: var(--primary-background);
+    margin: 160px 0px 0px -0px;
+    position: relative;
+}
+
+.main-section::before {
+    content: '';
+    background-image: url('./images/bg-curve-desktop1.png');
+    background-size: cover;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.green-link {
+    color: #3DA08F;
+}
+
+/* Testimonials */
+.testimonial {
+    width: 53%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 25px;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.testimonial p {
+    letter-spacing: 1px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.info {
+    display: flex;
+    margin-top: 20px 0px 20px 0px;
+    align-items: center;
+}
+
+.info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h4{
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+small {
+    letter-spacing: 0.5px;
+    font-size: 10px;
+}
+
+.sign-up-section {
+    background: var(--email-background);
+    color: #ffffff;
+    padding: 50px 0px;
+}
+
+.sign-up-section form {
+    flex-direction: column;
+}
+
+.sign-up-section form input {
+    flex: 1;
+    border: 1px solid var(--dark-blue);
+    border-radius: 3px;
+    margin-bottom: 16px;
+    color: var(--secondary-backgrouund);
+}
+
+.sign-up-section form button {
+    width: 50%;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--btn-blue);
+    border-radius: 3px;
+}
