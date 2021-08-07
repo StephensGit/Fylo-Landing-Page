@@ -11,11 +11,14 @@
     --email-background: hsl(238, 22%, 44%);
     --btn-blue: hsl(224, 93%, 58%);
     --link-color: hsl(170, 45%, 43%);
+    --base-font-size: 1.2em;
 }
 
 body {
-    background: var(--primary-background);
+    background: #ffffff;
     font-family: var(--body-font);
+    color: var(--dark-blue);
+    font-size: var(--base-font-size);
 }
 
 img {
@@ -25,12 +28,16 @@ img {
 .container {
     width: 1440px;
     max-width: 100%;
-    padding: 20px;
+    padding: 20px 0px;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 /* direct children of .flex */
@@ -38,6 +45,76 @@ img {
     flex: 1;
 }
 
+.flex > div:first-child {
+    padding-right: 30px;
+}
 
+.flex > div:last-child {
+    /* margin-left: 10px; */
+}
 
+/* Navigation */ 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 80px;
+}
 
+nav ul  {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 55px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+h1, h2 {
+    /* letter-spacing: 1px; */
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+h2 {
+    font-size: 2.2em;
+}
+/* Form  */
+form {
+    display: flex;
+}
+
+input {
+    /* width: 320px; */
+    flex: 0.6;
+    border: 1px solid var(--dark-blue);
+    border-radius: 2px;
+    padding: 15px;
+}
+
+button {
+    flex: 0.3;
+    border: 1px solid var(--btn-blue);
+    border-radius: 2px;
+    background: var(--btn-blue);
+    color: #ffffff;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.flex .main-left {
+    flex: 0.6;
+}
+
+.flex .main-right {
+    flex: 0.4;
+}
+
+.flex > .main-left > p {
+    width: 80%;
+} 
