@@ -23,10 +23,11 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+![Fylo landing page](https://user-images.githubusercontent.com/45046901/129782219-86668e16-3c49-4588-9607-1c3f1cf1cc0b.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://my-live-site-will-go-here.com)
 
 ## My process
 
