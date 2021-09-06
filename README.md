@@ -17,17 +17,15 @@ This is a solution to the [Fylo landing page challenge on Frontend Mentor]
 
 ### The challenge
 
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+The challenge is to build out this landing page and get it looking as close to the design as possible. 
+There is a folder called "design" containing the images I used to replicate the landing page.
 
 ### Screenshot
 ![Fylo landing page](https://user-images.githubusercontent.com/45046901/129782219-86668e16-3c49-4588-9607-1c3f1cf1cc0b.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://my-live-site-will-go-here.com)
+- Live Site URL: [https://stephen-moran-fylo-landing-page.netlify.app/]
 
 ## My process
 
